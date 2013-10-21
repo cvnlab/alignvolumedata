@@ -1,0 +1,19 @@
+function printtransformation(tr)
+
+% function printtransformation(tr)
+%
+% <tr> is of the format described in maketransformation.m.
+%   cannot be [].
+%
+% write out the text for a maketransformation.m command.
+
+fprintf(1,['tr = maketransformation(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s);\n'], ...
+  mat2str(tr.flip),mat2str(tr.reorder),mat2str(tr.trans),mat2str(tr.rotorder), ...
+  mat2str(tr.rot),mat2str(tr.matrixsize),mat2str(tr.matrixfov), ...
+  mat2str(tr.extrascale),mat2str(tr.extratrans),mat2str(tr.extrashear),mat2str(tr.extrashearflag));
+if isfield(tr,'extra')  % DEPRECATED
+  fprintf(1,'tr.extra = maketransformation(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s);\n', ...
+    mat2str(tr.extra.flip),mat2str(tr.extra.reorder),mat2str(tr.extra.trans),mat2str(tr.extra.rotorder), ...
+    mat2str(tr.extra.rot),mat2str(tr.extra.matrixsize),mat2str(tr.extra.matrixfov), ...
+    mat2str(tr.extrascale),mat2str(tr.extratrans),mat2str(tr.extrashear),mat2str(tr.extrashearflag));  % ??
+end
