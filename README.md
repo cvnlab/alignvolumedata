@@ -84,27 +84,28 @@ The RENDER control consists of a 'redraw' button that, when clicked, causes the 
 
 While one of the figure windows is active, you can use the keyboard to control various aspects of the alignment:
 
-  q w --> tx down up
-  a s --> tx down up
-  z x --> tz down up
-  e r --> rx down up
-  d f --> ry down up
-  c v --> rz down up
-  t y --> esx down up
-  g h --> esy down up
-  b n --> esz down up
-  u i --> etx down up
-  j k --> ety down up
-  m , --> etz down up
-  o p --> ehx down up
-  l ; --> ehy down up
-  . / --> ehz down up
-  [ ] --> slice down up (single)
-  { } --> slice down up (jump)
+  TRANSLATION:           ROTATION:
+  q w --> tx down up     e r --> rx down up
+  a s --> tx down up     d f --> ry down up
+  z x --> tz down up     c v --> rz down up
+
+  SCALING:               SHEARING:
+  t y --> esx down up    o p --> ehx down up
+  g h --> esy down up    l ; --> ehy down up
+  b n --> esz down up    . / --> ehz down up
+
+  VIEW:
   '   --> toggle OVERLAY MAIN
   1   --> set slice dimension to 'x'
   2   --> set slice dimension to 'y'
   3   --> set slice dimension to 'z'
+  [ ] --> slice down/up (single)
+  { } --> slice down/up (jump)
+
+  (DEPRECATED, PROBABLY DON'T USE:)
+  u i --> etx down up
+  j k --> ety down up
+  m , --> etz down up
 
 === NOTES AND TIPS ===
 

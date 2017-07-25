@@ -230,6 +230,24 @@ set([AV_FIGREF AV_FIGTGT AV_FIGOLY],'Visible','on');
 % report finished
 fprintf(1,'alignvolumedata executed successfully.\n');
 
+% print some instructions:
+fprintf('  TRANSLATION:           ROTATION:\n');
+fprintf('  q w --> tx down up     e r --> rx down up\n');
+fprintf('  a s --> tx down up     d f --> ry down up\n');
+fprintf('  z x --> tz down up     c v --> rz down up\n');
+fprintf('\n');
+fprintf('  SCALING:               SHEARING:\n');
+fprintf('  t y --> esx down up    o p --> ehx down up\n');
+fprintf('  g h --> esy down up    l ; --> ehy down up\n');
+fprintf('  b n --> esz down up    . / --> ehz down up\n');
+fprintf('\n');
+fprintf('  VIEW:\n');
+fprintf('  ''   --> toggle OVERLAY MAIN\n');
+fprintf('  1   --> set slice dimension to x\n');
+fprintf('  2   --> set slice dimension to y\n');
+fprintf('  3   --> set slice dimension to z\n');
+fprintf('  [ ] --> slice down/up (single)\n');
+fprintf('  { } --> slice down/up (jump)\n');
 
 
 
