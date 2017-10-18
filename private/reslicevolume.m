@@ -224,7 +224,7 @@ case {1 3}
     bestres = min(tgtlengths);  % best resolution we can get from the volume being extracted from
     otherdims = setdiff(1:3,dim);
     for otherdim=otherdims
-      fctr(otherdim) = ceil(outputlengths(p)/bestres);
+      fctr(otherdim) = ceil(outputlengths(otherdim)/bestres);
       outputlengths(otherdim) = outputlengths(otherdim)/fctr(otherdim);
     end
   end
