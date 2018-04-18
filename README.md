@@ -48,7 +48,7 @@ There are three render windows.  The window in the upper left shows the current 
 
 The TX, TY, TZ controls are text boxes indicating the current translation coordinates as well as buttons that allow for decrementing and incrementing.
 
-The RX, RY, RZ controls are text boxes indicating the current rotation amounts (in degrees) as well as buttons that allow for decrementing and incrementing.
+The RX, RY, RZ controls are text boxes indicating the current rotation amounts (in degrees) as well as buttons that allow for decrementing and incrementing.  Note that there is a drop-down that allows you to change the order in which rotations are applied.  This is very handy because you may find that in some cases, the rotations necessary involve causing two different rotation parameters (e.g. RX and RZ) having almost identical effects --- this is bad and will hinder the alignment, so in such cases, you should change the rotation order and re-determine the rotation parameters.  Ideally, you will find a regime where parameters have distinct effects on the alignment results.
 
 The ESX, ESY, ESZ controls are text boxes indicating the current scale factors as well as buttons that allow for decrementing and incrementing.  Scale factors must be non-zero but can be negative (which allows for flipping).
 
