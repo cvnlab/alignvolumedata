@@ -126,7 +126,7 @@ alignvolumedata_calcgrid(1,'linear',0);  % 'linear' forces a calculation
 
 % calculate 3D Gaussian ball (same dimensions as target matrix)
 if ~isvector(ballmn)
-  ball = ballmn;
+  ball = logical(ballmn);  % ensure sanity
 else
   ball = makegaussian3d(AV_TGTSIZE,ballmn,ballsd,[],[],[]) > .5;
 end
